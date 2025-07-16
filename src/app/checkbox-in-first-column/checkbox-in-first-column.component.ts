@@ -73,20 +73,20 @@ export class CheckboxInFirstColumnComponent implements OnInit {
   initGrid(grid: wjcGrid.FlexGrid) {
     this.selector = new Selector(grid, {
       itemChecked: () => {
-        this.items = grid.rows.filter((r) => r.isSelected);
+        // this.items = grid.rows.filter((r) => r.isSelected);
       },
     });
-    this.view = this.data;
+    // this.view = this.data;
   }
 
   setHeaders(headersOn: boolean) {
-    let theGrid = this.selector.column.grid;
-    theGrid.headersVisibility = headersOn
-      ? HeadersVisibility.All
-      : HeadersVisibility.Column;
-    this.selector.column = headersOn
-      ? theGrid.rowHeaders.columns[0]
-      : theGrid.columns[0];
-    this.headers = headersOn;
+    // let theGrid = this.selector.column.grid;
+    // theGrid.headersVisibility = headersOn
+    //   ? HeadersVisibility.All
+    //   : HeadersVisibility.Column;
+    // this.selector.column = headersOn
+    //   ? theGrid.rowHeaders.columns[0]
+    //   : theGrid.columns[0];
+    // this.headers = headersOn;
   }
 }
